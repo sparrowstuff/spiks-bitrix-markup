@@ -3,7 +3,7 @@
 @use '../core/ui/layout';
 @use '../core/config/scss/colors' as colors;
 // @import '../../node_modules/nouislider/dist/nouislider.min.css';
-@import '../core/config/scss/_font';
+@use '../core/config/scss/_font' as font;
 
 * {
 	margin: 0;
@@ -23,15 +23,6 @@
 	}
 }
 
-@font-face {
-	font-family: 'Proxima Nova';
-	src: url('../core/assets/fonts/ProximaNova-Regular.woff2') format('woff2'),
-		url('../core/assets/fonts/ProximaNova-Regular.woff') format('woff');
-	font-weight: 400;
-	font-style: normal;
-	font-display: swap;
-}
-
 html {
 	scroll-behavior: smooth;
 }
@@ -42,11 +33,11 @@ body {
 	flex-direction: column;
 	width: 100%;
 	height: 100vh;
-	font-family: 'Proxima Nova';
+	font-family: font.$proxima;
 }
 
 .header {
-	background-color: $deepPurple;
+	background-color: colors.$deepPurple;
 	padding: 1.37rem 0 1.81rem;
 
 	&__main {
