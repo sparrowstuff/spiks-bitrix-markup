@@ -4,13 +4,14 @@ html(lang="ru")
     meta(charset="utf-8")
     meta(name="viewport", content="width=device-width, initial-scale=1.0")
     title Поиск товаров
-    source(src="../app/index.js", type="module")
+    link(rel='stylesheet', href='/css/index.css')
+    
   
   body 
     .header 
       .container
-        block .header__main 
-          a.header__main-link(href="#", aria-label="Переход на главную страницу") marketplace
+        .header__main 
+          a.header__main-link(href="#", aria-label="Переход на главную страницу") Marketplace
           .custom-input 
             label.custom-input__label(for="search") 
               svg.custom-search__search-icon(width="24", height="24", viewBox="0 0 24 24", fill="none", xmlns="http://www.w3.org/2000/svg")

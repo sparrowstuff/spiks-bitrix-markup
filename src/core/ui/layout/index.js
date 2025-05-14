@@ -20,14 +20,14 @@
 	document.addEventListener('DOMContentLoaded', mount)
 })(window)
 
-import 'nouislider/dist/nouislider.min.css'
+// import 'nouislider/dist/nouislider.min.css'
 
-let slider = document.getElementById('slider')
+// let slider = document.getElementById('slider')
 
-noUiSlider.create(slider, {
-	start: [20],
-	range: {
-		min: [0],
-		max: [100],
-	},
-})
+// noUiSlider.create(slider, {
+// 	start: [20],
+// 	range: {
+// 		min: [0],
+// 		max: [100],
+// 	},
+// })
